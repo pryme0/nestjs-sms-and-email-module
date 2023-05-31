@@ -35,7 +35,7 @@ It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Ter
 
 PS: I am  open to contributions.
 
-Note : you will need to create accounts on both platforms to obtain thier api keys.
+#Note : you will need to create accounts on both platforms to obtain thier api keys.
 
 ## Installation
 
