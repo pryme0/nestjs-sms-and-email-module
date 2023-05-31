@@ -33,7 +33,7 @@ This is a simple implementation for sending email and sms notifications with  ne
 It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Termii (<https://termii.com/>) for sending sms and graphql as its transport layer.
 
 
-PS: I am very open to contributions.
+PS: I am  open to contributions.
 
 #STUB - Note : you will need to create accounts on both platforms to obtain thier api keys.
 
@@ -77,9 +77,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Joseph Obochi]
 
 ## License
 
