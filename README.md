@@ -17,42 +17,28 @@
 ## About
 
 This is a simple implementation for sending email and sms notifications with nestjs .
-
 It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Termii (<https://termii.com/>) for sending sms.
 
 **Sample payload for sending sms**
 
-input: {
-
-from:"Doow inc"
-
-to:"+2348007910016"
-
-sms:"test message"
-
-channel:GENERIC
-
-type:"plain"
-
-}
+    input: {
+    from:"Doow inc"
+    to:"+2348007910016"
+    sms:"test message"
+    channel:GENERIC
+    type:"plain"
+    }
 
 **Sample payload for sending sms**
 
-input: {
-
-message: {
-
-to: [{ email: "johndoe@mailreciever.com" }]
-
-text: "testing email"
-
-from_email: "<janedoe@mailsender.com>"
-
-subject:"testing emails"
-
-}
-
-}
+    input: {
+    message: {
+    to: [{ email: "johndoe@mailreciever.com" }]
+    text: "testing email"
+    from_email: "janedoe@mailsender.com"
+    subject:"testing emails"
+    }
+    }
 
 ### Initializing the sms module
 
@@ -100,7 +86,7 @@ PS: Contributions are welcome.
 
 ## Installation
 
-npm  install  @prymejo/nestjs-sms-and-email-module
+    npm  install  @prymejo/nestjs-sms-and-email-module
 
 - Author - [pryme0]
 
