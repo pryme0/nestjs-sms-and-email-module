@@ -88,7 +88,7 @@ PS: Contributions are welcome.
 
     npm  install  @prymejo/nestjs-sms-and-email-module
 
-- Author - [pryme0]
+- Author - [pryme0] obochi2@gmail.com
 
 ## License
 
