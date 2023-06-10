@@ -53,12 +53,12 @@ It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Ter
     import {SmsService} from '@prymejo/nestjs-sms-and-email-module';
     
     export class UserService{
-  constructor(private readonly smsService:SmsService){
-  }
+    constructor(private readonly smsService:SmsService){
+    }
   
-  async sendOtp(payload:SendSmsInterface){
-  await this.smsService.sendSms(payload)
-  }
+    async sendOtp(payload:SendSmsInterface){
+    await this.smsService.sendSms(payload)
+    }
 
 ### Initializing the Email module
 
@@ -73,12 +73,10 @@ It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Ter
     import {EmailService} from '@prymejo/nestjs-sms-and-email-module';
     
     export class UserService{
-  constructor(private readonly emailService:EmailService){
-  }
-  
-  async sendOtp(payload:MailChimpEmailInterface){
-  await this.emailService.sendMail(payload)
-  }
+    constructor(private readonly emailService:EmailService){}
+    async sendEmail(payload:MailChimpEmailInterface){
+    await this.emailService.sendMail(payload)
+    }
 
 PS: Contributions are welcome.
 
