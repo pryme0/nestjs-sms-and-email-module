@@ -2,7 +2,7 @@
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "name": "@prymejo/nestjs-sms-and-email-module",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
   "author": "Prymejo",
   "private": false,
@@ -17,7 +17,6 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@apollo/server": "^4.7.1",
     "@mindik/mailchimp-nestjs": "^1.1.5",
     "@nestjs-modules/mailer": "^1.8.1",
     "@nestjs/axios": "^2.0.0",
