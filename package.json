@@ -1,18 +1,15 @@
 {
-  "name": "notification-service",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "name": "@prymejo/nestjs-sms-and-email-module",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
+  "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
+  "author": "Prymejo",
+  "private": false,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
@@ -23,21 +20,18 @@
     "@apollo/server": "^4.7.1",
     "@mindik/mailchimp-nestjs": "^1.1.5",
     "@nestjs-modules/mailer": "^1.8.1",
-    "@nestjs/apollo": "^11.0.6",
     "@nestjs/axios": "^2.0.0",
-    "@nestjs/common": "^9.0.0",
+    "@nestjs/common": "^9.4.2",
     "@nestjs/config": "^2.3.2",
     "@nestjs/core": "^9.0.0",
-    "@nestjs/graphql": "^11.0.6",
-    "@nestjs/platform-express": "^9.0.0",
     "reflect-metadata": "^0.1.13",
+    "rimraf": "^5.0.1",
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
-    "@types/express": "^4.17.13",
     "@types/jest": "29.5.1",
     "@types/node": "18.16.12",
     "@types/supertest": "^2.0.11",
@@ -72,5 +66,18 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pryme0/nestjs-sms-and-email-module.git"
+  },
+  "keywords": [
+    "nestjs",
+    "sms",
+    "email"
+  ],
+  "bugs": {
+    "url": "https://github.com/pryme0/nestjs-sms-and-email-module/issues"
+  },
+  "homepage": "https://github.com/pryme0/nestjs-sms-and-email-module#readme"
 }

@@ -19,8 +19,10 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@messenger/libs": ["libs"],
-      "@messenger/libs/*": ["libs/*"],
-      "@notificationModule/*": ["./src/notification/*"]
+      "@messenger/libs/*": ["libs/*"]
     }
-  }
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
 }

@@ -1,83 +1,108 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+<p  align="center">
+<a  href="http://nestjs.com/"  target="blank"><img  src="https://nestjs.com/img/logo-small.svg"  width="200"  alt="Nest Logo"  /></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository for sending email and sms.
+@prymejo/nestjs-sms-and-email-module is a simple package that provides functionalities for sending emails and sms.
+
+# Key features
+
+ 1. Send bulk sms
+ 2. Send single sms
+ 3. Send Email with text
+ 4. Send email with temmplate ( templates can be generated on mandrill or mailchimp)
 
 ## About
 
-This is a simple implementation for sending email and sms notifications with  nestjs .
+This is a simple implementation for sending email and sms notifications with nestjs .
 
-It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Termii (<https://termii.com/>) for sending sms and graphql as its transport layer.
+It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Termii (<https://termii.com/>) for sending sms.
 
+**Sample payload for sending sms**
 
-PS: I am  open to contributions.
+input: {
 
-#Note : you will need to create accounts on both platforms to obtain thier api keys.
+from:"Doow inc"
+
+to:"+2348007910016"
+
+sms:"test message"
+
+channel:GENERIC
+
+type:"plain"
+
+}
+
+**Sample payload for sending sms**
+
+input: {
+
+message: {
+
+to: [{ email: "johndoe@mailreciever.com" }]
+
+text: "testing email"
+
+from_email: "<janedoe@mailsender.com>"
+
+subject:"testing emails"
+
+}
+
+}
+
+### Initializing the sms module
+
+    import {SmsModule} from '@prymejo/nestjs-sms-and-email-module';
+    
+    @module({
+    imports:[SmsModule.register(TERMII_API_KEY)]
+    })
+
+### Using the sms service
+
+    import {SmsService} from '@prymejo/nestjs-sms-and-email-module';
+    
+    export class UserService{
+  constructor(private readonly smsService:SmsService){
+  }
+  
+  async sendOtp(payload:SendSmsInterface){
+  await this.smsService.sendSms(payload)
+  }
+
+### Initializing the Email module
+
+    import {EmailModule} from '@prymejo/nestjs-sms-and-email-module';
+    
+    @module({
+    imports:[EmailModule.register(MANDRILL_API_KEY)]
+    })
+
+### Using the email service
+
+    import {EmailService} from '@prymejo/nestjs-sms-and-email-module';
+    
+    export class UserService{
+  constructor(private readonly emailService:EmailService){
+  }
+  
+  async sendOtp(payload:MailChimpEmailInterface){
+  await this.emailService.sendMail(payload)
+  }
+
+PS: Contributions are welcome.
+
+ Note : you will need to create accounts on both Mailchimp( Mandrill <https://mailchimp.com> ) and Mailchimp( Mandrill <https://mailchimp.com> ) to obtain thier api keys.
 
 ## Installation
 
+npm  install  @prymejo/nestjs-sms-and-email-module
 
-
-```bash
-$ yarn install
-```
-
-## Running the app
-
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Joseph Obochi]
+- Author - [pryme0]
 
 ## License
 

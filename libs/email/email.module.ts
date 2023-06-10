@@ -1,17 +1,21 @@
 import { MailchimpModule } from '@mindik/mailchimp-nestjs';
-import { Module } from '@nestjs/common';
-import { MailChimpEmailServcie } from './mailchimp.service';
-import { ConfigService } from '@nestjs/config';
+import { DynamicModule, Module } from '@nestjs/common';
+import { EmailService } from './mailchimp.service';
 
-@Module({
-  imports: [
-    MailchimpModule.forRootAsync({
-      useFactory: () => {
-        return process.env.MAILCHIMP_KEY;
-      },
-    }),
-  ],
-  providers: [MailChimpEmailServcie],
-  exports: [MailChimpEmailServcie],
-})
-export class EmailModule {}
+@Module({})
+export class EmailModule {
+  static register(mail_chimp_key): DynamicModule {
+    return {
+      module: EmailModule,
+      imports: [
+        MailchimpModule.forRootAsync({
+          useFactory: () => {
+            return mail_chimp_key;
+          },
+        }),
+      ],
+      providers: [EmailService],
+      exports: [EmailService],
+    };
+  }
+}

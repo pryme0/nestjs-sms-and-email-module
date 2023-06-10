@@ -6,7 +6,7 @@ import {
 } from './email.interface';
 
 @Injectable()
-export class MailChimpEmailServcie {
+export class EmailService {
   constructor(@InjectMailchimp() private readonly mail) {}
 
   async sendMail(payload: MailChimpEmailInterface) {
