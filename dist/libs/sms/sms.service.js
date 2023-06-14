@@ -13,7 +13,7 @@ exports.SmsService = void 0;
 const constants_1 = require("./constants");
 const common_1 = require("@nestjs/common");
 const axios_1 = require("axios");
-let SmsService = class SmsService {
+let SmsService = exports.SmsService = class SmsService {
     constructor(Api_Key) {
         this.Api_Key = Api_Key;
         this.api_key = Api_Key;
@@ -36,9 +36,8 @@ let SmsService = class SmsService {
         }
     }
 };
-SmsService = __decorate([
+exports.SmsService = SmsService = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [Object])
 ], SmsService);
-exports.SmsService = SmsService;
 //# sourceMappingURL=sms.service.js.map

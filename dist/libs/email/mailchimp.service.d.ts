@@ -1,5 +1,5 @@
 import { MailChimpEmailInterface, MailChimpTemplateEmailInterface } from './email.interface';
-export declare class MailChimpEmailServcie {
+export declare class EmailService {
     private readonly mail;
     constructor(mail: any);
     sendMail(payload: MailChimpEmailInterface): Promise<any>;

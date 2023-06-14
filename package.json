@@ -6,10 +6,10 @@
   "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
   "author": "Prymejo",
   "private": false,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "prepublish": "yarn run build"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@mindik/mailchimp-nestjs": "^1.1.5",
@@ -25,12 +25,6 @@
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
     "@types/node": "18.16.12",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.3.2",
     "source-map-support": "^0.5.20",
     "ts-loader": "^9.2.3",
     "ts-node": "^10.0.0",

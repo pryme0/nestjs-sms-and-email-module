@@ -12,10 +12,10 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MailChimpEmailServcie = void 0;
+exports.EmailService = void 0;
 const mailchimp_nestjs_1 = require("@mindik/mailchimp-nestjs");
 const common_1 = require("@nestjs/common");
-let MailChimpEmailServcie = class MailChimpEmailServcie {
+let EmailService = exports.EmailService = class EmailService {
     constructor(mail) {
         this.mail = mail;
     }
@@ -44,10 +44,9 @@ let MailChimpEmailServcie = class MailChimpEmailServcie {
         }
     }
 };
-MailChimpEmailServcie = __decorate([
+exports.EmailService = EmailService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mailchimp_nestjs_1.InjectMailchimp)()),
     __metadata("design:paramtypes", [Object])
-], MailChimpEmailServcie);
-exports.MailChimpEmailServcie = MailChimpEmailServcie;
+], EmailService);
 //# sourceMappingURL=mailchimp.service.js.map
