@@ -80,7 +80,7 @@ It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Ter
 
 PS: Contributions are welcome.
 
- Note : you will need to create accounts on both Mandrill ((<https://mailchimp.com>) docs can be found at <https://mailchimp.com/developer/transactional/api/> ) and Termmi((<https://termii.com/>) docs can be found at <https://developer.termii.com/switch>) to obtain thier api keys.
+ Note : you will need to create accounts on both Mandrill ((<https://mailchimp.com>) docs can be found at <https://mailchimp.com/developer/transactional/api/> ) and Termii((<https://termii.com/>) docs can be found at <https://developer.termii.com/switch>) to obtain thier api keys.
 
 ## Installation
 
