@@ -85,6 +85,8 @@ PS: Contributions are welcome.
 ## Installation
 
     npm  install  @prymejo/nestjs-sms-and-email-module
+    
+    yarn  add  @prymejo/nestjs-sms-and-email-module
 
 - Author - [pryme0] <obochi2@gmail.com>
 
