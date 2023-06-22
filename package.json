@@ -20,8 +20,7 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^5.0.1",
     "rxjs": "^7.2.0",
-    "wrap-ansi": "7.0.0",
-    "wrap-ansi-cjs": "7.0.0"
+    "wrap-ansi": "8.1.0"
   },
   "devDependencies": {
     "@types/node": "18.16.12",
