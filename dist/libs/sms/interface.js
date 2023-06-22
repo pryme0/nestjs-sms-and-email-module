@@ -6,5 +6,5 @@ var TermiiSmsChannels;
     TermiiSmsChannels["DND"] = "dnd";
     TermiiSmsChannels["WHATSAPP"] = "whatsapp";
     TermiiSmsChannels["GENERIC"] = "generic";
-})(TermiiSmsChannels || (exports.TermiiSmsChannels = TermiiSmsChannels = {}));
+})(TermiiSmsChannels = exports.TermiiSmsChannels || (exports.TermiiSmsChannels = {}));
 //# sourceMappingURL=interface.js.map

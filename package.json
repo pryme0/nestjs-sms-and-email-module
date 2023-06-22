@@ -2,7 +2,7 @@
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "name": "@prymejo/nestjs-sms-and-email-module",
-  "version": "1.0.21",
+  "version": "1.0.24",
   "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
   "author": "Prymejo",
   "private": false,
@@ -11,24 +11,24 @@
     "build": "rimraf dist && tsc",
     "prepublish": "npm run build"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
-    "@mindik/mailchimp-nestjs": "^1.1.5",
+    "@mindik/mailchimp-nestjs": "^1.2.0",
     "@nestjs/axios": "^2.0.0",
     "@nestjs/common": "^9.4.2",
-    "@nestjs/core": "^9.4.2",
-    "node-fetch": "2.6.1",
-    "rimraf": "^5.0.1",
+    "axios": "^1.4.0",
+    "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
-    "wrap-ansi": "8.1.0"
+    "webpack": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "20.2.5",
-    "reflect-metadata": "^0.1.13",
+    "@types/node": "^20.2.5",
     "source-map-support": "^0.5.20",
     "ts-loader": "^9.2.3",
-    "ts-node": "^10.9.1",
-    "tsconfig-paths": "4.2.0",
-    "typescript": "^5.0.4"
+    "ts-node": "^10.0.0",
+    "typescript": "^4.7.4"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,9 @@
   "keywords": [
     "nestjs",
     "sms",
-    "email"
+    "email",
+    "Mandrill",
+    "Termii"
   ],
   "bugs": {
     "url": "https://github.com/pryme0/nestjs-sms-and-email-module/issues"

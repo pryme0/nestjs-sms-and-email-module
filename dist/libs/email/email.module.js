@@ -11,7 +11,7 @@ exports.EmailModule = void 0;
 const mailchimp_nestjs_1 = require("@mindik/mailchimp-nestjs");
 const common_1 = require("@nestjs/common");
 const mailchimp_service_1 = require("./mailchimp.service");
-let EmailModule = exports.EmailModule = EmailModule_1 = class EmailModule {
+let EmailModule = EmailModule_1 = class EmailModule {
     static register(mail_chimp_key) {
         return {
             module: EmailModule_1,
@@ -27,7 +27,8 @@ let EmailModule = exports.EmailModule = EmailModule_1 = class EmailModule {
         };
     }
 };
-exports.EmailModule = EmailModule = EmailModule_1 = __decorate([
+EmailModule = EmailModule_1 = __decorate([
     (0, common_1.Module)({})
 ], EmailModule);
+exports.EmailModule = EmailModule;
 //# sourceMappingURL=email.module.js.map

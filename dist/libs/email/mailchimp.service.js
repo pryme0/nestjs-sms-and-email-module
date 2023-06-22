@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmailService = void 0;
 const mailchimp_nestjs_1 = require("@mindik/mailchimp-nestjs");
 const common_1 = require("@nestjs/common");
-let EmailService = exports.EmailService = class EmailService {
+let EmailService = class EmailService {
     constructor(mail) {
         this.mail = mail;
     }
@@ -44,9 +44,10 @@ let EmailService = exports.EmailService = class EmailService {
         }
     }
 };
-exports.EmailService = EmailService = __decorate([
+EmailService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mailchimp_nestjs_1.InjectMailchimp)()),
     __metadata("design:paramtypes", [Object])
 ], EmailService);
+exports.EmailService = EmailService;
 //# sourceMappingURL=mailchimp.service.js.map

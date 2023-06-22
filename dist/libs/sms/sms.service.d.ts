@@ -6,5 +6,5 @@ export declare class SmsService {
     sendSms(payload: SendSmsInterface): Promise<{
         message: any;
     }>;
-    sendBulkSms(payload: SendSmsInterface): Promise<import("axios").AxiosResponse<any>>;
+    sendBulkSms(payload: SendSmsInterface): Promise<import("axios").AxiosResponse<any, any>>;
 }

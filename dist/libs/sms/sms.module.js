@@ -11,7 +11,7 @@ exports.SmsModule = void 0;
 const common_1 = require("@nestjs/common");
 const sms_service_1 = require("./sms.service");
 const axios_1 = require("@nestjs/axios");
-let SmsModule = exports.SmsModule = SmsModule_1 = class SmsModule {
+let SmsModule = SmsModule_1 = class SmsModule {
     static register(SMS_API_KEY) {
         return {
             module: SmsModule_1,
@@ -35,7 +35,8 @@ let SmsModule = exports.SmsModule = SmsModule_1 = class SmsModule {
         };
     }
 };
-exports.SmsModule = SmsModule = SmsModule_1 = __decorate([
+SmsModule = SmsModule_1 = __decorate([
     (0, common_1.Module)({})
 ], SmsModule);
+exports.SmsModule = SmsModule;
 //# sourceMappingURL=sms.module.js.map
