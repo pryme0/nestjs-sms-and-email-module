@@ -1,0 +1,79 @@
+Arguments: 
+  /home/jowey/.nvm/versions/node/v16.19.1/bin/node /usr/share/yarn/bin/yarn.js add wrap-ansi @7.0.0
+
+PATH: 
+  /home/jowey/.nvm/versions/node/v16.19.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.19.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@7.0.0: Request "https://registry.yarnpkg.com/@7.0.0" returned a 405
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66154:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "name": "@prymejo/nestjs-sms-and-email-module",
+    "version": "1.0.17",
+    "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
+    "author": "Prymejo",
+    "private": false,
+    "license": "MIT",
+    "scripts": {
+      "build": "rimraf dist && tsc",
+      "prepublish": "npm run build"
+    },
+    "dependencies": {
+      "@mindik/mailchimp-nestjs": "^1.1.5",
+      "@nestjs/axios": "^2.0.0",
+      "@nestjs/common": "^9.4.2",
+      "@nestjs/core": "^9.0.0",
+      "reflect-metadata": "^0.1.13",
+      "rimraf": "^5.0.1",
+      "rxjs": "^7.2.0"
+    },
+    "devDependencies": {
+      "@types/node": "18.16.12",
+      "source-map-support": "^0.5.20",
+      "ts-loader": "^9.2.3",
+      "ts-node": "^10.0.0",
+      "tsconfig-paths": "4.2.0",
+      "typescript": "^5.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pryme0/nestjs-sms-and-email-module.git"
+    },
+    "keywords": [
+      "nestjs",
+      "sms",
+      "email"
+    ],
+    "bugs": {
+      "url": "https://github.com/pryme0/nestjs-sms-and-email-module/issues"
+    },
+    "homepage": "https://github.com/pryme0/nestjs-sms-and-email-module#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

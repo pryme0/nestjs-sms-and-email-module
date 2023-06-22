@@ -2,7 +2,7 @@
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "name": "@prymejo/nestjs-sms-and-email-module",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
   "author": "Prymejo",
   "private": false,
@@ -18,7 +18,8 @@
     "@nestjs/core": "^9.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^5.0.1",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "wrap-ansi": "7.0.0"
   },
   "devDependencies": {
     "@types/node": "18.16.12",
