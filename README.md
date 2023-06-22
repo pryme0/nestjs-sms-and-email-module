@@ -21,15 +21,19 @@ It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Ter
 
 **Sample payload for sending sms**
 
+//you will need to set the senderId from the
+
     input: {
-    from:"Doow inc"
+    from:"sender@mail.com" 
     to:"+2348007910016"
     sms:"test message"
     channel:GENERIC
     type:"plain"
     }
 
-**Sample payload for sending sms**
+**Sample payload for sending email**
+
+//you will need to set the from_mail on the mandrill dashboard
 
     input: {
     message: {
