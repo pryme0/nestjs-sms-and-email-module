@@ -16,11 +16,7 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "paths": {
-      "@messenger/libs": ["libs"],
-      "@messenger/libs/*": ["libs/*"]
-    }
+    "noFallthroughCasesInSwitch": false
   },
 
   "include": ["src/**/*"],

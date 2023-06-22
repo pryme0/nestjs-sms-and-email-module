@@ -1,1 +1,1 @@
-export * from '@messenger/libs';
+export * from "../libs";
