@@ -1,15 +1,15 @@
 {
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.js",
   "name": "@prymejo/nestjs-sms-and-email-module",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo-small.svg\" width=\"200\" alt=\"Nest Logo\" /></a> </p>",
   "author": "Prymejo",
   "private": false,
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "prepublish": "npm run build"
+    "prepublish": "tsc"
   },
   "engines": {
     "node": ">=16"
