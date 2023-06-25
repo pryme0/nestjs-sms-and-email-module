@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../libs/email/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,oDAAkC;AAClC,iDAA+B;AAC/B,sDAAoC"}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/libs/email/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,oDAAkC;AAClC,iDAA+B;AAC/B,sDAAoC"}

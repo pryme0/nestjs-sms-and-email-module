@@ -7,12 +7,14 @@
 
 @prymejo/nestjs-sms-and-email-module is a simple package that provides functionalities for sending emails and sms.
 
+The package works with Nodejs v18 >
+
 # Key features
 
  1. Send bulk sms
  2. Send single sms
  3. Send Email with text
- 4. Send email with temmplate ( templates can be generated on mandrill or mailchimp)
+ 4. Send email with template ( templates can be generated on mandrill or mailchimp)
 
 ## About
 
@@ -84,7 +86,7 @@ It uses Mailchimp( Mandrill <https://mailchimp.com> ) for sending emails and Ter
 
 PS: Contributions are welcome.
 
- Note : you will need to create accounts on both Mandrill ((<https://mailchimp.com>) docs can be found at <https://mailchimp.com/developer/transactional/api/> ) and Termii((<https://termii.com/>) docs can be found at <https://developer.termii.com/switch>) to obtain thier api keys.
+ Note : you will need to create accounts on both Mandrill ((<https://mailchimp.com>) docs can be found at <https://mailchimp.com/developer/transactional/api/> ) and Termii((<https://termii.com/>) docs can be found at <https://developer.termii.com/switch>) to obtain their api keys.
 
 ## Installation
 
